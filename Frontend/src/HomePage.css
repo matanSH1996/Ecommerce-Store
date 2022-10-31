@@ -1,0 +1,67 @@
+
+    .home-component{
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+        display: flow-root;
+        max-width: 1500;
+    }
+    
+    .homePage-container{
+        /* background-color: rgb(255, 255, 255); */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homePage-wallpaper{
+        
+        width: 100%;
+        height: 400px;
+        background-repeat:no-repeat;
+        /* the "transparent" % will make the photo to disappear from bottop to top. the "black" % will decrease the saturation of the black color in the by the amount of % mentioned  */
+        mask-image: linear-gradient(to top, transparent 5%, black 110%);
+        margin-bottom: 15px;
+    }
+
+    .products-row{
+        margin: 10px 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+/* responsivness for 1024 px max */
+@media only screen and ( max-width: 1024px ) {
+
+    .home-component{
+        display: flex;
+        justify-content: center;
+        margin: 0px auto;
+        max-width: 1500;
+    }
+    
+    .homePage-container{
+        /* background-color: rgb(255, 255, 255); */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homePage-wallpaper{
+        width:100%;
+        height: auto;
+        background-repeat: no-repeat;
+        /* the "transparent" % will make the photo to disappear from bottop to top. the "black" % will decrease the saturation of the black color in the by the amount of % mentioned  */
+        mask-image: linear-gradient(to top, transparent 5%, black 110%);
+        margin-bottom: 15px;
+    }
+
+    .products-row{
+        position: none;
+        display: flex;
+        margin: 10px 5px;
+    }
+}

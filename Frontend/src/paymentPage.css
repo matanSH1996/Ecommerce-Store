@@ -1,0 +1,46 @@
+.paymentPage{
+    padding: 5px;
+    background-color: white;   
+}
+
+.paymentPage-headline{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 4px;
+    margin: 10px 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+.paymentPage-headline>h1{
+    text-align: center;
+    font-weight: 400;
+}
+
+.title-item-sum{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    margin-left: 5px;
+}
+
+.payment-section{
+    display: flex;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.payment-title{
+    flex: 0.2;
+}
+
+.payment-address{
+   flex: 0.8;
+   font-size: 14px;
+   margin-left: 20px;
+}
+
+.stripe-payment-method{
+    margin-left: 20px;
+}

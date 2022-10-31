@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: rgb(234,237,237);
+}
+
+/* Header's components CSS part: */
+
+.header{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131921;
+  top: 0;
+  z-index: 1;
+  color: white;    
+  font-size: 0.5rem;
+  text-align: center;
+
+}
+
+.logo-pic{
+  height: 25px;
+  width: 45px;
+  object-fit: contain;
+  margin: 0px 10px;
+
+}
+
+.header-search-div{
+display: flex;
+/* "flex 1" makes the div strech as wide as it can */
+flex: 1; 
+align-items: center;
+border-radius: 24px;
+}
+
+.header-search-input{
+border: none;
+width: 100%;
+padding: 4px;
+/* we can control which od the corners will be affect by the "border-radius" */
+border-radius: 3px 0px 0px 3px; 
+}
+
+.header-search-icon{
+background-color: #cd9042;
+border: transparent;
+border-radius: 0px 2px 2px 0px;
+}
+
+.header-navbar-tools{
+display: flex;
+flex-direction: row;
+object-fit: contain;
+justify-content: space-between;
+margin: 0px 5px 0px 10px;
+align-items: center;
+width: 100%;
+max-width: 250px;
+}
+
+.header-sign-in-div{
+  display: flex;
+  flex-direction: column;
+  max-width: 120px;
+  margin: 0px 20px;
+}
+
+.header-orders-div{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 3px;
+}
+
+.header-cart-div{
+  display: flex;
+  flex-direction: column;
+}
+
+:link{
+color: white;
+text-decoration: none;
+}
+
+
+.first-line{
+font-size: 9px;
+color: white;
+}
+
+.second-line{
+font-weight: 900;
+font-size: 9px;
+color: white;
+}
+.basket-counter{
+text-align: center;
+margin: 0px 5px;
+}
+
+.shoppingBasket-icon-div{
+margin: 0px 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/*responsive part - media query*/
+@media only screen and ( max-width: 1024px ) {
+
+/* responsive Header's components CSS part: */
+  .header{
+      height: 50px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #131921;
+      top: 0;
+      z-index: 1;
+      color: white;    
+      font-size: 0.5rem;
+      text-align: center;
+
+  }
+
+  .logo-pic{
+      height: 25px;
+      width: 45px;
+      object-fit: contain;
+      margin: 0px 10px;
+
+  }
+
+  .header-search-div{
+    display: flex;
+    /* "flex 1" makes the div strech as wide as it can */
+    flex: 1; 
+    align-items: center;
+    border-radius: 24px;
+  }
+
+  .header-search-input{
+    border: none;
+    width: 100%;
+    padding: 4px;
+    /* we can control which od the corners will be affect by the "border-radius" */
+    border-radius: 3px 0px 0px 3px; 
+  }
+
+  .header-search-icon{
+    background-color: #cd9042;
+    border: transparent;
+    border-radius: 0px 2px 2px 0px;
+  }
+
+  .header-navbar-tools{
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+    justify-content: space-between;
+    margin: 0px 5px 0px 10px;
+    align-items: center;
+
+  }
+
+  .header-sign-in-div{
+      display: flex;
+      flex-direction: column;
+      max-width: 100px;
+      margin: 0px 3px;
+  }
+
+  .header-orders-div{
+      display: flex;
+      flex-direction: column;
+      margin: 0px 3px;
+  }
+
+  .header-cart-div{
+      display: flex;
+      flex-direction: column;
+  }
+
+  :link{
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .first-line{
+    font-size: 9px;
+    color: white;
+  }
+
+  .second-line{
+    font-weight: 900;
+    font-size: 9px;
+    color: white;
+  }
+  .basket-counter{
+    text-align: center;
+    margin: 0px 5px;
+  }
+
+  .shoppingBasket-icon-div{
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

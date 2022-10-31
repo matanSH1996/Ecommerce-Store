@@ -1,0 +1,43 @@
+.checkout{
+    background-color: rgb(255, 255, 255);
+    height: max-content;
+ }
+ 
+ .checkout-banner{
+     width:100%;
+     height: 200px;
+     background-repeat: no-repeat;
+     z-index: -1;
+     /* the "transparent" % will make the photo to disappear from bottop to top. the "black" % will decrease the saturation of the black color in the by the amount of % mentioned  */
+     mask-image: linear-gradient(to top, transparent 5%, black 75%);
+ }
+ 
+ .product-subtotal-div-wrapper{
+     display: flex;
+     align-content:space-between;
+ }
+ 
+ .checkout-subtotal-div{
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .checkout-products-list{
+     text-align: center;
+     position: relative;
+     /* background-color: #fffefe; */
+     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(200,200,200,1) 35%, rgba(169, 169, 169, 0.815) 100%);
+     height: 100%;
+     min-height: 180px;
+     margin-right: 5px;
+     flex: 0.9 1;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .checkout-title{
+     text-align: center;
+     margin: 3px;
+     min-height: 95px;
+ }
